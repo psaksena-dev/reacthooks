@@ -1,9 +1,9 @@
-import Card from './Card/Card.component';
+import UseStateExample from './components/UseStateExample/UseStateExample';
 
 function App() {
 	return (
 		<div>
-			<Card />
+			<UseStateExample />
 		</div>
 	);
 }
