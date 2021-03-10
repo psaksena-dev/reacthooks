@@ -1,0 +1,23 @@
+.Card {
+	width: 400px;
+	height: 300px;
+	margin: 100px auto;
+	background-color: #21c8f1;
+
+	h1 {
+		padding-top: 100px;
+		color: #ffffff;
+		letter-spacing: 1.5px;
+		text-transform: uppercase;
+	}
+
+	button {
+		padding: 10px 30px;
+		border: 0;
+		border-radius: 10px;
+		color: #cc0000;
+		font-weight: bold;
+		letter-spacing: 1.5px;
+		cursor: pointer;
+	}
+}
