@@ -1,30 +1,24 @@
 import React, { useState } from 'react';
 import Card from './../Card/Card.component';
 
-class UseStateExample extends React.Component {
-	state = {
-		name: 'Pulkit',
-		changeName: 'Lipika'
-	};
-	render() {
-		return (
-			<div>
-				<Card>
-					<h1>{this.state.name}</h1>
-					<button
-						onClick={() =>
-							this.setState((prevState) => ({
-								name: prevState.changeName,
-								changeName: prevState.name
-							}))
-						}
-					>
-						Change name to {this.state.changeName}
-					</button>
-				</Card>
-			</div>
-		);
-	}
-}
+const UseStateExample = () => {
+	const [name, setName] = useState('Pulkit');
+	const [changeName, setChangeName] = useState('Lipika');
+	return (
+		<div>
+			<Card>
+				<h1>{name}</h1>
+				<button
+					onClick={() => {
+						setName(changeName);
+						setChangeName(name);
+					}}
+				>
+					Change name to {changeName}
+				</button>
+			</Card>
+		</div>
+	);
+};
 
 export default UseStateExample;
